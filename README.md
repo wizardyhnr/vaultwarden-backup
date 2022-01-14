@@ -2,10 +2,10 @@ Forked from jjlin's repo. Plan to use gnupu unsymmetric encryption as it is safe
 
 Prerequisite: 
 
-Understand pgp's concept of unsymmetric encryption, public (sub) key, secret (sub) key.
+Understand PGP's concept of unsymmetric encryption, public (sub) key, secret (sub) key.
 https://gnupg.org/index.html
 
-Understand gnupg' usage. gnupg is GNU implementation of gpg.
+Understand GNUPG's usage. GNUPG is GNU implementation of PGP.
 https://lab.jinkan.org/2020/04/30/gnupg-in-three-steps/
 
 Security key suppport pgp smartcard standard like yubikey 5 series, canokey, etc.. This is optional but recommended since your security key is stored on smartcard and cannot be exported. decryption verification happends inside smartcard instead of PC RAM.
