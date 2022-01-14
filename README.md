@@ -1,6 +1,6 @@
 ## Difference from jjlin's repo.
 
-Forked from jjlin's repo. Plan to use gnupu unsymmetric encryption as it is safer to encrypt backup sync to cloud storage.
+Forked from jjlin's repo. Use gnupu unsymmetric encryption as it is safer to encrypt backup synced to cloud storage.
 
 ### Prerequisites:
 
