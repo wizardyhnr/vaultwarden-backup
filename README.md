@@ -92,22 +92,20 @@ If this is an issue, you might consider modifying the script to use
       set, only `gpg` encryption will be performed. If you don't want
       encryption at all, comment out both variables or set them to be blank.~~
       
-      This fork only uses unsymmetric key encryption.
+      This fork only uses unsymmetric encryption.
       
       Make sure gngpg is available. 
       
       Recommend to copy gpg.conf from this repo https://github.com/drduh/config/blob/master/gpg.conf.
       
-      import your **public key NOT seceret key** on vps.
+      Import your **public key NOT seceret key** on vps.
       ```
       gpg --import your-pub-key-in-asc-format
       ```
-      set KEYID to your public key ID.
+      Set KEYID to your public key ID.
       
       `gpg -k` would shows it.
       
-
-
       ~~This passphrase is used to encrypt the backup archives, which may
       contain somewhat sensitive data in plaintext in `config.json` (the
       password entries themselves are already encrypted by Bitwarden). It
