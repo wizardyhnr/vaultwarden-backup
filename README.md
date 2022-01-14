@@ -86,13 +86,25 @@ If this is an issue, you might consider modifying the script to use
 
 2. Copy the `backup.conf.template` file to `backup.conf`.
 
-   1. If you want encrypted backup archives using `gpg`, set the
+   1. ~~If you want encrypted backup archives using `gpg`, set the
       `GPG_PASSPHRASE` variable accordingly. If you want to encrypt using
       `age` instead, set the `AGE_PASSPHRASE` variable. If both variables are
       set, only `gpg` encryption will be performed. If you don't want
-      encryption at all, comment out both variables or set them to be blank.
+      encryption at all, comment out both variables or set them to be blank.~~
+      
+      This fork only uses unsymmetric key encryption.
+      
+      import your public key.
+      ```
+      gpg --import your-pub-key-in-asc-format
+      ```
+      set KEYID to your public key ID.
+      
+      `gpg -k` would shows it.
+      
+      Recommend to copy gpg.conf from this repo https://github.com/drduh/config/blob/master/gpg.conf.
 
-      This passphrase is used to encrypt the backup archives, which may
+      ~~This passphrase is used to encrypt the backup archives, which may
       contain somewhat sensitive data in plaintext in `config.json` (the
       password entries themselves are already encrypted by Bitwarden). It
       should be something easy enough for you to remember, but complex enough
