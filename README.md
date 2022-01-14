@@ -4,13 +4,13 @@ Forked from jjlin's repo. Use gnupu unsymmetric encryption as it is safer way to
 
 ### Prerequisites:
 
-Understand PGP's concept of unsymmetric encryption, public (sub) key, secret (sub) key.
+Understand OPENPGP's concept of unsymmetric encryption, public (sub) key, secret (sub) key.
 https://gnupg.org/index.html
 
-Understand GNUPG's usage. GNUPG is GNU implementation of PGP.
+Understand GNUPG's usage. GNUPG is GNU implementation of OPENPGP.
 https://lab.jinkan.org/2020/04/30/gnupg-in-three-steps/
 
-Security key suppport pgp smartcard standard like yubikey 5 series, canokey, etc.. This is optional but recommended since your sec key is stored on smartcard and cannot be exported. Decryption verification happends inside smartcard instead of PC RAM.
+Security key suppport OPENPGP smartcard standard like yubikey 5 series, canokey, etc.. This is optional but recommended since your sec key is stored on smartcard and cannot be exported. Decryption verification happends inside smartcard instead of PC RAM.
 https://github.com/drduh/YubiKey-Guide
 
 If not familiar with above concepts and have no idea of how to manage/backup sec keys, please don't use this repo as your data is not recoverable if you forget your sec key!
