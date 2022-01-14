@@ -15,6 +15,8 @@ https://github.com/drduh/YubiKey-Guide
 
 If not familiar with above concepts and have no idea of how to manage/backup sec keys, please don't use this repo as your data is not recoverable if you forget your sec key!
 
+For large size backup and concern about bit rot due to crapy network, par2 can be used to create recovery records. Not implemented though since my backup is very small.
+
 Below is copy of Lin's README with some modifications to fit this repo.
 
 ## Overview
