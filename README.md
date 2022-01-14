@@ -1,8 +1,8 @@
-## Preface
+## Difference from jjlin's repo.
 
 Forked from jjlin's repo. Plan to use gnupu unsymmetric encryption as it is safer to encrypt backup sync to cloud storage.
 
-**Prerequisites: **
+### Prerequisites:
 
 Understand PGP's concept of unsymmetric encryption, public (sub) key, secret (sub) key.
 https://gnupg.org/index.html
