@@ -94,7 +94,7 @@ If this is an issue, you might consider modifying the script to use
       
       This fork only uses unsymmetric encryption.
       
-      Make sure gngpg is available. 
+      Make sure gnugpg is available. 
       
       Recommend to copy gpg.conf from this repo https://github.com/drduh/config/blob/master/gpg.conf.
       
