@@ -111,7 +111,7 @@ If this is an issue, you might consider modifying the script to use
       to deter, for example, any unscrupulous cloud storage personnel who
       might be snooping around. As this passphrase is stored on disk in
       plaintext, it definitely should not be your Bitwarden master passphrase
-      or anything similar.
+      or anything similar.~~
 
       [rclone crypt](https://rclone.org/crypt/) is another option for encrypted
       archives. If you prefer to use this method, just set `GPG_PASSPHRASE` to
