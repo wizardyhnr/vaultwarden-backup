@@ -94,7 +94,11 @@ If this is an issue, you might consider modifying the script to use
       
       This fork only uses unsymmetric key encryption.
       
-      import your public key.
+      Make sure gngpg is available. 
+      
+      Recommend to copy gpg.conf from this repo https://github.com/drduh/config/blob/master/gpg.conf.
+      
+      import your **public key NOT seceret key** on vps.
       ```
       gpg --import your-pub-key-in-asc-format
       ```
@@ -102,7 +106,7 @@ If this is an issue, you might consider modifying the script to use
       
       `gpg -k` would shows it.
       
-      Recommend to copy gpg.conf from this repo https://github.com/drduh/config/blob/master/gpg.conf.
+
 
       ~~This passphrase is used to encrypt the backup archives, which may
       contain somewhat sensitive data in plaintext in `config.json` (the
@@ -113,10 +117,10 @@ If this is an issue, you might consider modifying the script to use
       plaintext, it definitely should not be your Bitwarden master passphrase
       or anything similar.~~
 
-      [rclone crypt](https://rclone.org/crypt/) is another option for encrypted
+      ~~[rclone crypt](https://rclone.org/crypt/) is another option for encrypted
       archives. If you prefer to use this method, just set `GPG_PASSPHRASE` to
       be blank, configure rclone crypt appropriately, and use the crypt remote
-      in `RCLONE_DESTS`.
+      in `RCLONE_DESTS`.~~
 
    2. Change `RCLONE_DESTS` to your list of rclone destinations. You'll have
       to [configure](https://rclone.org/docs/) rclone appropriately first.
