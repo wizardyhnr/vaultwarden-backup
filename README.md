@@ -2,6 +2,7 @@ Forked from jjlin's repo. Plan to use gnupu unsymmetric encryption as it is safe
 code not updated yet. Will clean this line when it done.
 
 Prerequisite: 
+
 understand pgp's concept of unsymmetric encryption, public (sub) key, secret (sub) key.
 
 understand gnupg' usage. gnupg is GNU implementation of gpg.
