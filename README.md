@@ -10,7 +10,7 @@ https://gnupg.org/index.html
 Understand GNUPG's usage. GNUPG is GNU implementation of PGP.
 https://lab.jinkan.org/2020/04/30/gnupg-in-three-steps/
 
-Security key suppport pgp smartcard standard like yubikey 5 series, canokey, etc.. This is optional but recommended since your security key is stored on smartcard and cannot be exported. decryption verification happends inside smartcard instead of PC RAM.
+Security key suppport pgp smartcard standard like yubikey 5 series, canokey, etc.. This is optional but recommended since your sec key is stored on smartcard and cannot be exported. decryption verification happends inside smartcard instead of PC RAM.
 https://github.com/drduh/YubiKey-Guide
 
 If not familiar with above concepts and have no idea of how to manage/backup sec keys, please don't use this repo as your data is not recoverable if you forget your sec key!
