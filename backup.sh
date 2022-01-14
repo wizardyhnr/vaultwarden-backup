@@ -1,6 +1,8 @@
 #!/bin/bash
 
 set -ex
+#set permission to 700 temporary
+umask 066
 
 # Use the value of the corresponding environment variable, or the
 # default if none exists.
@@ -19,7 +21,7 @@ BACKUP_FILE_NAME="${BACKUP_DIR_NAME}.tar.xz"
 BACKUP_FILE_PATH="${BACKUP_ROOT}/${BACKUP_FILE_DIR}/${BACKUP_FILE_NAME}"
 DB_FILE="db.sqlite3"
 
-source "${BACKUP_ROOT}"/backup.conf
+source "${BACKUP_ROOT}"/backup.conf > /dev/null 2>&1
 
 cd "${VAULTWARDEN_ROOT}"
 mkdir -p "${BACKUP_DIR_PATH}"
@@ -53,11 +55,11 @@ rm -rf "${BACKUP_DIR_PATH}"
 md5sum "${BACKUP_FILE_PATH}"
 sha1sum "${BACKUP_FILE_PATH}"
 
-if [[ -n ${GPG_PASSPHRASE} ]]; then
+if [[ -n ${KEYID} ]]; then
     # https://gnupg.org/documentation/manuals/gnupg/GPG-Esoteric-Options.html
     # Note: Add `--pinentry-mode loopback` if using GnuPG 2.1.
-    printf '%s' "${GPG_PASSPHRASE}" |
-    ${GPG} -c --cipher-algo "${GPG_CIPHER_ALGO}" --batch --passphrase-fd 0 "${BACKUP_FILE_PATH}"
+	echo $KEYID
+    ${GPG} -e -r "${KEYID}" "${BACKUP_FILE_PATH}"
     BACKUP_FILE_NAME+=".gpg"
     BACKUP_FILE_PATH+=".gpg"
     md5sum "${BACKUP_FILE_PATH}"

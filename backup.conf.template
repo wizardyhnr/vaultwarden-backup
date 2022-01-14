@@ -4,8 +4,11 @@
 # Encryption options for GnuPG (https://www.gnupg.org/)
 # Uncomment to enable GnuPG encryption.
 #
-GPG_CIPHER_ALGO=AES128
-GPG_PASSPHRASE='hunter2'
+#GPG_CIPHER_ALGO=AES128
+#GPG_PASSPHRASE='hunter2'
+
+#assign public key id, starts with 0x.
+KEYID="your public key  id"
 
 #
 # Encryption options for age (https://github.com/FiloSottile/age)
