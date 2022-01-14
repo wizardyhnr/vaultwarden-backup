@@ -106,7 +106,7 @@ If this is an issue, you might consider modifying the script to use
       ```
       Set KEYID to your public key ID.
       
-      `gpg -k` would shows it.
+      `gpg -k` would show it.
       
       ~~This passphrase is used to encrypt the backup archives, which may
       contain somewhat sensitive data in plaintext in `config.json` (the
