@@ -1,3 +1,12 @@
+Forked from jjlin's repo. Plan to use gnupu unsymmetric encryption as it is safer to encrypt backup sync to cloud storage.
+code not updated yet. Will clean this line when it done.
+
+Prerequisite: 
+understand pgp's concept of unsymmetric encryption, public (sub) key, secret (sub) key.
+understand gnupg' usage. gnupg is GNU implementation of gpg.
+security key suppport pgp smartcard standard like yubikey 5 series, canokey, etc.. This is optional but recommended since your security key is stored on smartcard and cannot be exported. decryption verification happends inside smartcard instead of PC RAM.
+If not familiar with above concepts and have no idea of how to manage/backup sec keys, please don't use this repo as your data is not recoverable if you forget your sec key! 
+
 ## Overview
 
 **Note: Vaultwarden was formerly known as bitwarden_rs.**
